@@ -201,7 +201,7 @@ def start():
     return jsonify({"message":"Server is running.."})
 
 @app.route('/harvest', methods=["POST"])
-@cross_origin(supports_credentials=True)
+@cross_origin(origin='*')
 def harvest():
 
     request_data = request.json['soilData']
