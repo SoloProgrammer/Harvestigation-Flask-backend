@@ -7,7 +7,7 @@ from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
 # Importing numpy to do stuffs related to arrays
 import numpy as np
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import os
 
 
@@ -191,7 +191,7 @@ def PredictCropWithReact(nitrogen, phosphorus, potassium, temperature, humidity,
 app = Flask(__name__)
 
 # Cross Origin Resource Sharing Setup
-CORS(app)
+CORS(app, support_credentials=True)
 
 # Defining POST route
 
@@ -201,6 +201,7 @@ def start():
     return jsonify({"message":"Server is running.."})
 
 @app.route('/harvest', methods=["POST"])
+@cross_origin(supports_credentials=True)
 def harvest():
 
     request_data = request.json['soilData']
