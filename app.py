@@ -183,7 +183,7 @@ def PredictCropWithReact(nitrogen, phosphorus, potassium, temperature, humidity,
 
     print(crop_name)
 
-    return {"detail": "<p> <h6>Sir according to the data that you provided to us.</h6> <ul> <li>The ratio of <u>nitrogen</u> in the soil is  " + "<i>" + nitrogen_level + "</i>" + ".</li>" + " \n <li>The ratio of <u>phosphorus</u> in the soil is  " + "<i>" + phosphorus_level + "</i>" + ".</li>" + "<li> The ratio of <u>potassium</u> in the soil is  " + "<i>" + potassium_level + "</i>" + ".</li>" + "<li> The <u>temperature</u> level around the field is " + "<i>" +
+    return {"detail": "<p> <h6>Our analysis of the data that you provided to us indicated that.</h6> <ul> <li>The ratio of <u>nitrogen</u> in the soil is  " + "<i>" + nitrogen_level + "</i>" + ".</li>" + " \n <li>The ratio of <u>phosphorus</u> in the soil is  " + "<i>" + phosphorus_level + "</i>" + ".</li>" + "<li> The ratio of <u>potassium</u> in the soil is  " + "<i>" + potassium_level + "</i>" + ".</li>" + "<li> The <u>temperature</u> level around the field is " + "<i>" +
             temperature_level + "</i>" + ".</li> " + "<li>The <u>humidity</u> level around the field is  " + "<i>" + humidity_level + "</i>" + ".</li>" + "<li>The <u>ph</u> type of the soil is  " + "<i>" + phlevel + "</i>" + ".</li>" + "<li> The amount of <u>rainfall</u> is  " + "<i>" + rainfall_level + "</i>" + ".</li>" + "</ul></p>", "crop_name": crop_name}
 
 
